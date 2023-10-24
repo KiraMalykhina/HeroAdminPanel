@@ -38,7 +38,7 @@ const HeroesAddForm = () => {
         }
         // Отправляем данные на сервер в формате JSON
         // ТОЛЬКО если запрос успешен - отправляем персонажа в store
-        request("http://localhost:3001/heroes", "POST", JSON.stringify(newHero))
+        request("https://ybv8lr9edd.execute-api.eu-central-1.amazonaws.com/prod/heroes", "POST", JSON.stringify(newHero))
             .then(res => console.log(res, "Запрос успешен"))
             .then (res => dispatch(heroCreated(newHero)))
             .catch(err => console.log(err));

@@ -13,7 +13,7 @@ export const fetchHeroes = createAsyncThunk(
     'heroes/fetchHeroes', //имя среза/тип действия 
      () => {
         const {request} = useHttp();
-        return request("http://localhost:3001/heroes");
+        return request("https://ybv8lr9edd.execute-api.eu-central-1.amazonaws.com/prod/heroes");
         
      }
     //ф-я которая return асс-ый код (промис)

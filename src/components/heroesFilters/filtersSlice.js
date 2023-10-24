@@ -14,7 +14,7 @@ export const fetchFilters = createAsyncThunk(
     'filters/fetchHeroes', 
      () => {
         const {request} = useHttp();
-        return request("http://localhost:3001/filters");
+        return request("https://ybv8lr9edd.execute-api.eu-central-1.amazonaws.com/prod/filters");
      }  
 );
 
